@@ -1,0 +1,107 @@
+---
+alwaysApply: true
+---
+# ==========================================
+# PROJECT RULES: TECH STACK & CREATION PLAN
+# ==========================================
+
+# TECH STACK
+# ----------
+# - Must use Next.js 14+ with the App Router.
+# - Must use TypeScript for all React components and lib files.
+# - Must use Tailwind CSS as the primary styling solution.
+# - Must deploy on Vercel (production URL used in README and portfolio).
+# - May use:
+#   - Framer Motion for animations and section reveals.
+#   - Icon libraries (e.g., lucide-react) for UI icons.
+#   - shadcn/ui or similar, but styles must match the pink/lavender theme.
+# - No real backend or database; portfolio is static / client-side only.
+
+# FILE STRUCTURE RULES
+# --------------------
+# - Follow the directory layout shown in the "CONCRETE FILE STRUCTURE" tree.
+# - All UI/visual components must live under:
+#   - components/layout    → shared layout pieces (Header, Footer, MobileNav)
+#   - components/sections  → one component per main section (Hero, About, Skills, etc.)
+#   - components/ui        → reusable primitives (Button, Card, Badge, SectionTitle, SocialLink)
+# - All data-like content must be in:
+#   - lib/projects.ts      → project metadata (title, description, tech, links, image)
+#   - lib/skills.ts        → skill groups and levels
+#   - lib/siteConfig.ts    → site name, tagline, social links, email, etc.
+# - Global styling and Tailwind layers must be defined in:
+#   - app/globals.css      → imports Tailwind base/components/utilities + custom global styles.
+
+# IMPLEMENTATION PHASES
+# ---------------------
+# PHASE 0 – INITIAL SETUP
+# - Initialize Next.js 14+ app with TypeScript and Tailwind.
+# - Create GitHub repo and push initial project.
+# - Connect repo to Vercel and verify the starter page builds and deploys.
+
+# PHASE 1 – DESIGN SYSTEM FOUNDATION
+# - Configure Tailwind theme with:
+#   - Primary colors: pink and lavender/purple variants.
+#   - Neutral grayscale for text/background.
+#   - Font families for headings and body.
+# - Implement base UI primitives:
+#   - Button.tsx, Card.tsx, SectionTitle.tsx, Badge.tsx, SocialLink.tsx.
+# - Verify these primitives render correctly in a test page or directly in page.tsx.
+
+# PHASE 2 – LAYOUT & NAVIGATION SKELETON
+# - Implement <Header /> with:
+#   - Desktop navigation links to #hero, #about, #skills, #projects, #contact.
+#   - A sticky top bar that stays visible while scrolling.
+# - Implement <MobileNav /> with a hamburger toggle on small screens.
+# - In app/page.tsx, render all section components in order:
+#   - <Hero />, <AboutSection />, <SkillsSection />, <ProjectsSection />, <ContactSection />.
+# - Add smooth scrolling behavior for internal nav links.
+
+# PHASE 3 – CONTENT & DATA MODELS
+# - Fill lib/siteConfig.ts with:
+#   - Site title, your name, tagline, email, GitHub, LinkedIn URLs.
+# - Fill lib/skills.ts with grouped skills:
+#   - { category: 'Frontend', items: [...] }, etc.
+# - Fill lib/projects.ts with at least three project entries:
+#   - Title, description, role, tech stack, image path, GitHub link, optional demo link.
+# - Connect these data files to SkillsSection and ProjectsSection via props.
+
+# PHASE 4 – SECTION IMPLEMENTATIONS
+# - Hero.tsx:
+#   - Display your name, role ("Full Stack Developer"), short intro, and CTA buttons.
+#   - Include your photo (public/avatar-ara.jpg) with styled frame.
+# - AboutSection.tsx:
+#   - Display 3–5 paragraphs about your story and CPU background.
+#   - Optionally highlight "4th-year Central Philippine University student".
+# - SkillsSection.tsx:
+#   - Use lib/skills.ts to render skill groups and levels using Card/Badge components.
+# - ProjectsSection.tsx:
+#   - Map over lib/projects.ts and render project cards with image, tech badges, and buttons.
+# - ContactSection.tsx:
+#   - Show a friendly CTA text.
+#   - Show email button (mailto:...) and social links via SocialLink component.
+
+# PHASE 5 – ANIMATIONS & UX POLISH
+# - Integrate Framer Motion (or CSS transitions) to:
+#   - Animate hero text and image on load.
+#   - Reveal sections as they enter the viewport.
+#   - Add hover effects to buttons and cards (subtle scaling + shadow).
+# - Add active state styling for nav items based on scroll position (scroll spy behavior).
+# - Ensure buttons and links have visible focus states for keyboard navigation.
+
+# PHASE 6 – RESPONSIVE DESIGN & CROSS-DEVICE TESTING
+# - Test on common widths: 1920, 1440, 1024, 834, 768, 414, 375.
+# - Fix any layout issues:
+#   - Overflowing text, images breaking layout, cramped sections on mobile.
+# - Ensure:
+#   - Tap targets >= 44x44px on mobile.
+#   - Text remains readable without zoom.
+
+# PHASE 7 – PERFORMANCE, CLEANUP & FINAL DEPLOY
+# - Optimize project images (resize + compress; use Next.js <Image>).
+# - Remove dead code, unused imports, and console logs.
+# - Run TypeScript and ESLint checks; fix errors and important warnings.
+# - Update README.md with:
+#   - Project description, tech stack, setup instructions, and live Vercel URL.
+# - Trigger final Vercel deployment and confirm:
+#   - All sections load correctly.
+#   - All links and CTAs work as expected.
