@@ -1,3 +1,91 @@
 ---
 alwaysApply: true
 ---
+# ===============================
+# PROJECT RULES: PORTFOLIO GOALS
+# ===============================
+
+# OVERALL PURPOSE
+# ---------------
+# - This portfolio is a real-world asset to be used for:
+#   - Internship applications.
+#   - Job applications.
+#   - Freelance or side project opportunities.
+# - The site must make Ara look:
+#   - Professional.
+#   - Friendly and approachable.
+#   - Focused on UI/UX and full stack web development.
+
+# CONTENT GOALS
+# -------------
+# - Hero section:
+#   - Immediately communicates who Ara is and what she does.
+#   - Includes a clear primary call-to-action (e.g., "View Projects" or "Contact Me").
+# - About section:
+#   - Tells a short but compelling story:
+#     - Ara as a 4th-year Central Philippine University student.
+#     - How she got into web development.
+#     - What she values in UI/UX and full stack work.
+# - Skills section:
+#   - Clearly shows Ara’s main strengths (UI/UX + web development).
+#   - Organizes skills into meaningful categories (Frontend, Backend, Tools, Design).
+#   - Gives a rough sense of proficiency (e.g., beginner / intermediate / advanced).
+# - Projects section:
+#   - Showcases at least 3 meaningful projects.
+#   - Each project describes:
+#     - What it does and who it’s for.
+#     - Ara’s role and the main tech stack.
+#     - Links to GitHub and (if possible) live demos.
+#   - Visuals (screenshots) are clean, readable, and consistent.
+# - Contact section:
+#   - Makes it easy to reach Ara via email and social profiles.
+#   - Uses clear, friendly microcopy that matches Ara’s casual tone.
+
+# DESIGN & BRANDING GOALS
+# -----------------------
+# - Visual style:
+#   - Cute, jolly, and pastel with a focus on pink and lavender/purple.
+#   - No brown in the main color palette.
+#   - The design feels fun but not childish—still appropriate for professional use.
+# - Typography:
+#   - Uses at most 2–3 complementary fonts.
+#   - Body text remains easily readable (>= 16px).
+#   - Headings create a clear hierarchy and draw attention where needed.
+# - Layout:
+#   - Uses generous spacing and clear section boundaries.
+#   - Feels organized and not cluttered, even on smaller screens.
+# - Animations:
+#   - Eye-catching but not overwhelming.
+#   - Used to support the content (reveals, hover states, subtle movements), not distract.
+
+# UX, RESPONSIVENESS & ACCESSIBILITY GOALS
+# ----------------------------------------
+# - Navigation:
+#   - Simple and intuitive one-page layout with smooth scrolling.
+#   - Sticky header so sections are always easy to reach.
+#   - On mobile, a hamburger menu provides the same access to sections.
+# - Responsiveness:
+#   - The site looks good and is easy to use on:
+#     - Desktop, laptop, tablet, and mobile phones.
+#   - No horizontal scrolling on normal viewports.
+# - Accessibility:
+#   - Text contrast is high enough to be readable over backgrounds.
+#   - Images (especially your photo and project screenshots) include alt text.
+#   - The site can be navigated with a keyboard (tab focus visible on interactive elements).
+
+# PROFESSIONALISM & QUALITY GOALS
+# -------------------------------
+# - Code quality:
+#   - Clean, consistent, and readable TypeScript + JSX.
+#   - Clear component structure (layout vs sections vs ui vs lib).
+#   - No obvious unused code or commented-out blocks in the final version.
+# - Version control:
+#   - Commit history tells a clear story of development, with focused commit messages.
+# - Performance:
+#   - Page loads quickly enough to feel smooth on typical connections.
+#   - Images are optimized; only necessary dependencies are used.
+# - Final impression:
+#   - A recruiter or teacher visiting the site should:
+#     - Understand who Ara is within a few seconds.
+#     - Quickly see what Ara can do (skills + projects).
+#     - Easily contact Ara if interested in opportunities.
