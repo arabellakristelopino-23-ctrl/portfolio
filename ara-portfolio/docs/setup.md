@@ -28,12 +28,12 @@ The command installs Next.js, Tailwind CSS, Framer Motion, and supporting dev to
 
 ## Deployment
 
-The repository root contains `vercel.json`, which pins Vercel to the `ara-portfolio/`
-subdirectory and runs installs/builds there. Keep these values in sync with the
-commands below whenever tooling changes.
+`vercel.json` now lives inside `ara-portfolio/`, so the config travels with the app
+and Vercel automatically reads it when the project root is set to that folder.
+Keep these values in sync with the commands below whenever tooling changes.
 
 1. Create a Vercel project pointing to this repository.
-2. No manual “Root Directory” tweak is needed—the config routes builds to `ara-portfolio/`.
+2. No manual “Root Directory” tweak is needed once Vercel points at `ara-portfolio/`.
 3. Build command: `npm run build` (invoked via `vercel.json`). Output directory: `.next`.
 4. Environment variables: none required.
 
