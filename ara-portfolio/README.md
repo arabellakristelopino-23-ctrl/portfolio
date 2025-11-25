@@ -1,6 +1,6 @@
 ## Ara Mae Rabaya — Portfolio
 
-Pastel, animation-rich portfolio for a 4th-year Central Philippine University student focused on UI/UX-forward full stack work. Built with Next.js App Router, Tailwind CSS, and Framer Motion.
+Pastel, animation-rich portfolio for a 3rd-year Central Philippine University student focused on UI/UX-forward full stack work. Built with Next.js App Router, Tailwind CSS, and Framer Motion.
 
 ### ✨ Highlights
 
